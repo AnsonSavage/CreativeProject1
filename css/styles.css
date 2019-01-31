@@ -1,0 +1,221 @@
+.imageWithQuote {
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+#AnsonDescription {
+  word-wrap: break-word;
+  align-self: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3em;
+  padding-top: 1%;
+  color: #003154;
+}
+
+img {
+  width: 100%;
+}
+
+.masonry {
+  padding-top: 1%;
+  column-count: 4;
+  column-gap: 1em;
+}
+
+.masonry-item {
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.bg-dark {
+  /*To override Bootstrap's .bg-dark*/
+  background: #29130a !important;
+}
+
+body {
+  background: rgb(255, 255, 245);
+  width: 100%;
+}
+
+.navbar-brand {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 2em;
+}
+
+.collapse.navbar-collapse {
+  marin: auto;
+  width: 50%;
+  font-size: 1.2em;
+}
+
+#slimBox {
+  border-style: solid;
+  border-width: thin;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#lightSideBar {
+  border-right: thin solid rgba(255, 255, 255, 0.71);
+  padding-right: 1%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #29130a;
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
+
+div a {
+  font-size: 1.2em;
+  color: rgb(255, 255, 255);
+}
+
+div a:hover {
+  color: rgba(255, 255, 255, 0.63);
+}
+
+h1 {
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  font-size: 4em;
+  text-align: center;
+  color: #fffce6;
+  margin: 3%;
+}
+
+.fancyCenterText {
+  word-wrap: break-word;
+  align-self: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 1%;
+  color: #fffce6;
+}
+
+.darkFancyCenterText {
+  word-wrap: break-word;
+  align-self: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 1%;
+  color: #003154;
+}
+
+.Name {
+  align-self: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+  padding-left: 20%;
+  color: #003154;
+}
+
+.container {
+  width: 100%;
+}
+
+#homePage {
+  background-image: url("/images/0704162047a.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width:1025px) {
+  .imageWithQuote {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4%;
+  }
+
+  #AnsonDescription {
+    word-wrap: break-word;
+    align-self: center;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.6em;
+    padding-top: 1%;
+    color: #003154;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .darkFancyCenterText {
+    word-wrap: break-word;
+    align-self: center;
+    text-align: center;
+    font-style: italic;
+    font-size: 3em;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    color: #003154;
+  }
+
+  .Name {
+    align-self: center;
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+    padding-left: 20%;
+    color: #003154;
+  }
+
+  #homePage {
+    background-image: url("/images/0826181925_HDR.jpg");
+    background-size: 140%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .masonry {
+    padding-top: 1%;
+    column-count: 2;
+    column-gap: 1em;
+  }
+
+  .masonry-item {
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+  }
+
+  h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+    color: #fc4444;
+    margin: 3%;
+  }
+
+  .fancyCenterText {
+    word-wrap: break-word;
+    align-self: center;
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 1%;
+    color: #fc4444;
+  }
+}
