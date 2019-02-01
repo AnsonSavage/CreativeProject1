@@ -1,3 +1,13 @@
+:root {
+  /*root is a pseudo-class that I'm using to declare variables*/
+  --darkFloatingColor: rgba(19, 19, 19, 0.85);
+}
+
+body {
+  background: rgb(34, 34, 34);
+  width: 100%;
+}
+
 .imageWithQuote {
   width: 20%;
   margin: 0 auto;
@@ -33,23 +43,41 @@ img {
 
 .bg-dark {
   /*To override Bootstrap's .bg-dark*/
-  background: #29130a !important;
+  background: var(--darkFloatingColor) !important;
 }
 
-body {
-  background: rgb(255, 255, 245);
+.navbar {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
 }
 
 .navbar-brand {
-  font-family: 'Major Mono Display', monospace;
-  font-size: 2em;
+  font-family: 'Cinzel', serif;
+  font-size: 2.1em;
+  margin: auto;
 }
 
-.collapse.navbar-collapse {
-  marin: auto;
-  width: 50%;
-  font-size: 1.2em;
+.navbar-collapse {
+  margin: auto;
+  width: 100%;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.navbar-nav {
+  margin: auto;
+  width: 100%;
+  justify-content: center !important;
+}
+
+li {
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family: 'Cinzel', serif;
 }
 
 #slimBox {
@@ -59,9 +87,8 @@ body {
   padding-right: 1%;
 }
 
-#lightSideBar {
-  border-right: thin solid rgba(255, 255, 255, 0.71);
-  padding-right: 1%;
+#lightBottomBar {
+  border-bottom: thin solid rgba(255, 255, 255, 0.71);
 }
 
 .footer {
@@ -69,10 +96,11 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #29130a;
+  background-color: var(--darkFloatingColor);
   color: white;
   text-align: center;
   padding: 1%;
+  box-shadow: 0px -2px 20px 1px var(--darkFloatingColor);
 }
 
 div a {
@@ -85,12 +113,11 @@ div a:hover {
 }
 
 h1 {
-  font-family: 'Major Mono Display', monospace;
-  font-weight: bold;
-  font-size: 4em;
+  font-family: 'Cinzel', serif;
+  font-size: 6em;
   text-align: center;
-  color: #fffce6;
-  margin: 3%;
+  color: #ff3333;
+  margin: 1%;
 }
 
 .fancyCenterText {
@@ -99,8 +126,8 @@ h1 {
   text-align: center;
   font-style: italic;
   font-size: 2em;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 30%;
+  padding-right: 30%;
   padding-top: 1%;
   color: #fffce6;
 }
@@ -126,14 +153,18 @@ h1 {
   color: #003154;
 }
 
-.container {
-  width: 100%;
+.frontPageContainer {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 #homePage {
-  background-image: url("/images/0704162047a.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background: url("/images/TyrantHandSpaceship.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 @media (max-width:1025px) {
@@ -151,10 +182,6 @@ h1 {
     font-size: 1.6em;
     padding-top: 1%;
     color: #003154;
-  }
-
-  .container {
-    width: 100%;
   }
 
   .darkFancyCenterText {
@@ -199,11 +226,11 @@ h1 {
   }
 
   h1 {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Cinzel', serif;
     font-weight: bold;
     font-size: 5em;
     text-align: center;
-    color: #fc4444;
+    color: #121212;
     margin: 3%;
   }
 
