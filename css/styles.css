@@ -28,6 +28,32 @@ img {
   width: 100%;
 }
 
+.movie {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.movieTitle {
+  font-family: 'Cinzel', serif;
+  color: white;
+  font-size: 3em;
+  padding: 2%;
+}
+
+.embed-responsive {
+  width: 70%;
+}
+
+hr {
+  width: 80%;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  margin: 1em 0;
+}
+
 .masonry {
   padding-top: 1%;
   column-count: 4;
@@ -46,7 +72,7 @@ img {
   background: var(--darkFloatingColor) !important;
 }
 
-.navbar {
+#centerNavbar {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -56,10 +82,21 @@ img {
   box-shadow: 0px 0px 20px 2px var(--darkFloatingColor);
 }
 
+.topNavbar {
+  margin: 0;
+  position: relative;
+  top: 0%;
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  width: 100%;
+  box-shadow: 0px 0px 20px 2px var(--darkFloatingColor);
+}
+
 .navbar-brand {
   font-family: 'Cinzel', serif;
   font-size: 2.1em;
   margin: auto;
+  word-spacing: 15px;
 }
 
 .navbar-collapse {
@@ -70,6 +107,12 @@ img {
 }
 
 .navbar-nav {
+  margin: auto;
+  width: 100%;
+  justify-content: flex-end !important;
+}
+
+#frontPageNavbar {
   margin: auto;
   width: 100%;
   justify-content: center !important;
@@ -88,7 +131,7 @@ li {
   padding-right: 1%;
 }
 
-#lightBottomBar {
+.lightBottomBar {
   border-bottom: thin solid rgba(255, 255, 255, 0.71);
 }
 
@@ -133,18 +176,6 @@ h1 {
   color: #fffce6;
 }
 
-.darkFancyCenterText {
-  word-wrap: break-word;
-  align-self: center;
-  text-align: center;
-  font-style: italic;
-  font-size: 2em;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 1%;
-  color: #003154;
-}
-
 .Name {
   align-self: center;
   text-align: center;
@@ -181,18 +212,6 @@ h1 {
     text-align: center;
     font-style: italic;
     font-size: 1.6em;
-    padding-top: 1%;
-    color: #003154;
-  }
-
-  .darkFancyCenterText {
-    word-wrap: break-word;
-    align-self: center;
-    text-align: center;
-    font-style: italic;
-    font-size: 3em;
-    padding-left: 1%;
-    padding-right: 1%;
     padding-top: 1%;
     color: #003154;
   }
