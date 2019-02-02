@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Link to BootstrapCDN
+  (CDN is content delivery network so that it can serve stuff up quickly
+  Routes you to the nearest copy.-->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" /> <!-- Because we want to override some bootstrap styles -->
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
+  <title>Movies</title>
+</head>
+
+<body>
+  <nav class="navbar topNavbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" id="lightSideBar">Savage Art</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/images.html">Images</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Movies<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="movie">
+    <h2 class="movieTitle">Sand Wars III: A House Divided</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qgaPvduXxFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="movieDescription">
+      Every Sand Wars video has culminated into this epic philosophical echo of World War II in Sand Wars III: A House Divided. There was 1002 days between the beginning and end of production, so watch it!
+    </p>
+    <hr />
+  </div>
+  <div class="movie">
+    <h2 class="movieTitle">Sand Wars II: The War in the Woods</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/dpENrCozv34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="movieDescription">
+      An epic lightsaber fight between Bill Thomas and Lord Donald Hussein Andre in the deep dark woods of Oregon... Made completely in Blender!
+    </p>
+    <hr />
+  </div>
+  <div class="movie">
+    <h2 class="movieTitle">Sand Wars I: The Battle of Harris Beach</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/__phdvGKam8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="movieDescription">
+      This is the first video in the Sand Wars series. It features an epic lightsaber battle between Bill Thomas and Darth Bernard Vladimir on the rugged terrain of Harris Beach!
+    </p>
+    <hr />
+  </div>
+  <div class="footer">
+    <a href="https://github.com/AnsonSavage/CreativeProject1">Source Code on GitHub</a>
+  </div>
+
+  <!-- We put script tags at the bottom of the body because we want to load all the html elements before loading in the scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
